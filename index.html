@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> SSonG II WorK BooK</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Hello">
+        <p>This is 송이’s webpage for the Interactive Media class. Am I doing this right? 
+        The coding language feels incredibly difficult. <br>
+         It’s definitely a <b>realm</b> I have yet to reach.
+        <i>Welcome to my space</i>, but don’t set your 기대 too high. This is only the beginning. <br>
+        Is it just my greed to want this to be something unique? 응, 당신의 욕심입니다.Say<i> No No No</i>. But it's <i>Yes</i>. NO YES NO YES
+        </p>
+        <p class="title">SSonGII World</p>
+
+         <img id="Paper" src="./img/IMG_5205.png" class="week01-img">
+           <!-- <img src="/img/IMG_5205.png" class="week01-img01">
+            <img src="/img/IMG_5205.png" class="week01-img02">
+            <img src="/img/IMG_5205.png" class="week01-img03">
+            <img src="/img/IMG_5205.png" class="week01-img04"> -->
+
+        
+    </div>
+
+    
+
+    <div class="weekly">
+        <div class="week01"> 
+           <a href="./link/linkWeek01.html"> <h1>  WEEK01 </h1></a>
+
+            <p>
+                This is gestures <br>
+                that act as the trigger <br>
+                of human-nonhuman interactivity
+            </p>
+            <img src="./img/nav.png" class="week01-img05">
+
+            <!-- <p> <img src="/img/img20240802_15212934.png" class="Collage">  -->
+
+        </div>
+
+
+        <div class="week02">
+            <a id="week-2" href="./link/linkWeek02.html">
+               <h1>WEEK02 <br>
+                WEEK02<br>
+                WEEK02<br>
+                WEEK02<br>
+                WEEK02<br>
+                WEEK02<br>
+                WEEK02<br>
+               </h1>
+            </a>
+          
+
+             <img src="./img/idea sketch.png" class="ideasketch">
+             <p>
+                This is my Brainstorming<br>
+                for my workbook layout.<br>
+                I just threw in everything<br>
+                that came to my mind.<br>
+                Yes, it’s Crazy Eight.
+
+             </p>
+
+        </div>
+
+
+    
+            <a id="week03" href="./link/linkWeek03.html">
+                <h1>WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                    WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03 WEEK03
+                </h1>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="inspiration">
+        <a id="insp" href="./link/inspiration.html">
+        <h1><i>@Inspiration</i></h1>
+        </a>
+
+    </div>
+
+    <script>
+        const inspH1 = document.querySelector('.inspiration h1');
+
+        inspH1.style.opacity = 0;
+        inspH1.style.transform += ' translateY(100px)';
+        inspH1.style.transition = 'opacity 2s ease-in-out, transform 1s ease-in-out';
+      
+        const observerOptions = {
+          threshold: 0.3
+        };
+      
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              inspH1.style.opacity = 1;
+              inspH1.style.transform = 'scaleY(1.6) translateY(-50px)';
+            } else {
+              inspH1.style.opacity = 0;
+              inspH1.style.transform = 'scaleY(1.6) translateY(100px)';
+            }
+          });
+        }, observerOptions);
+      
+        observer.observe(inspH1);
+      </script>
+
+   
+   
+</body>
+
