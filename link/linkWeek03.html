@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>week03</title>
+</head>
+
+<style>
+     *{
+            cursor: url('./img/black.png')2 2, auto;
+        }
+        
+
+
+#bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1{
+    position: relative;
+    font-size: 5rem;
+    color: rgb(227, 227, 64);
+    -webkit-text-stroke: 1.5px black;
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    top: 65vh;
+}
+
+#challenge {
+    position: relative;
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: rgb(24, 24, 23);
+    text-align: center;
+    top: -10vh;
+    opacity: 0; 
+    animation: fadeIn 3s ease-in-out 4.5s forwards;
+}
+
+#challenge:hover{
+    color: rgb(227, 227, 64);
+    -webkit-text-stroke: 1.5px black;
+}
+
+#click{
+    position: absolute;
+    font-size: 1.2rem;
+    color: rgb(24, 24, 23);
+    text-align: center;
+    top: 20vh;
+    left: 50vw;
+    opacity: 0; 
+    animation: fadeIn 3s ease-in-out 5.5s forwards;
+
+
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+
+@keyframes fadeOut{
+    from{ opacity: 1;}
+    to{ opacity: 0;}
+}
+
+</style>
+
+<body>
+    <video autoplay muted loop id="bg" src="./vid_02/film.mov"></video>
+    <audio autoplay loop src="./vid_02/ontheIsland-godmode.mp3"></audio>
+    <h1><i>I’m working hard on making<br>my Workbook right now.</i></h1>
+    <div id="challenge"><i>Challenge?</i></div>
+    <div id="click"><i>click <br>⌄</i></div>
+    
+</body>
+
+<script>
+    const challengeTexts = 
+    ["Challenge?", 
+    "Yeah...there were a lot.", 
+    "Let's see...", 
+    "The coding terms?<br>Way too complicated.", 
+    "I messed up the z-index.", 
+    "Kept confusing up height and width.", 
+    "Relative & Absolute?<br>Still a mystery.",
+    "ID and class,<br>Why are they even different?", 
+    "And padding & margin?<br>They do whatever they want.", 
+    "Mobile version? An absolute disaster",
+    "Everything’s a mess…",
+    "But hey, I’m managing somehow."
+    ];
+    let currentText = 0;
+
+    document.getElementById("challenge").addEventListener("click", function() 
+    {
+        if (currentText < challengeTexts.length - 1) {
+            currentText++;
+            this.innerHTML = `<i>${challengeTexts[currentText]}</i>`;
+        } 
+        else {
+            this.style.animation = "fadeOut ease-out 1.5s";
+            document.getElementById("click").style.animation = "fadeOut ease-out 3s";
+        }
+    });
+</script>
+
+</html>

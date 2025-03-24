@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> SSonG II WorK BooK</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Rubik+Iso&family=Rubik+Pixels&display=swap" rel="stylesheet">
+    <title>week01</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        cursor: url('./img/blue.png')2 2, auto;
+    
+    }
+
+    body {
+    background: linear-gradient(to bottom, 
+        white 0%, 
+        rgb(79, 79, 79) 25%, 
+        white 50%, 
+        rgb(42, 42, 42) 75%, 
+        white 100%);
+        background-size: 100% 400%;
+        background-repeat: no-repeat;
+        animation:gradientEffect 10s linear infinite;
+        padding-bottom: 200px;
+    }
+
+    @keyframes gradientEffect {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 0% 100%; }
+    }
+
+
+    header{
+        font-family:'Rubik Pixels', sans-serif;
+        font-weight: 400;
+        font-size: 200px;
+        text-align: center;
+        color: black;
+        
+    }
+
+    header:hover{
+        animation: colourChange 2ms infinite;
+    }
+
+    @keyframes colourChange {
+    0% { color: #ff0000; } 
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ff00ff; } 
+    100% { color: #ffff00; } 
+}
+
+    .InteractiveMedia {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: 1;
+    }
+
+
+    .InteractiveMedia h1 { 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 5em;
+        position: absolute;
+        top: 10%; 
+        left: 20%; 
+        color: lawngreen;
+    
+    }
+
+    .InteractiveMedia h1:hover{
+        animation: noiseEffect 1s infinite;
+    }
+
+
+    .InteractiveMedia h2 { 
+        position: absolute;
+        font-size: 4em; 
+        top: 70%; 
+        left: 65%;
+        color: blue 
+        
+    }
+
+    .InteractiveMedia h2:hover{
+        animation: noiseEffect 1s infinite;
+    }
+
+    .InteractiveMedia h3 {
+        position: absolute;
+        font-size: 5em; 
+        text-align: left;
+        top: 120%; 
+        left: 5%;
+        color: red
+    }
+
+    .InteractiveMedia h3:hover{
+        animation: noiseEffect 1s infinite;
+    }
+
+    .img01{
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        width: 50%;
+        box-shadow: 10px 10px 20px rgb(255, 0, 0);
+
+    }
+
+    .img02{
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        width: 50%;
+        box-shadow: 10px 10px 20px rgb(174, 255, 0);
+
+    }
+
+    .img03{
+        position: relative;
+        top: 120%;
+        left: 15%;
+        width: 50%;
+        box-shadow: 10px 10px 20px rgb(0, 26, 255);
+
+    }
+
+@keyframes noiseEffect{
+  0%,12.5% {transform: translate(10px,0)}
+  13%,25%  {transform: translate(4px,-4px)}
+  26%,37.5%{transform: translate(2px,8px)}
+  38%,50%  {transform: translate(12px,-6px)}
+  51%,62.5%{transform: translate(0,12px)}
+  63%,75%  {transform: translate(-8px,-4px)}
+  76%,86.5%{transform: translate(-12px,6px)}
+  87%,100% {transform: translate(6px,0)}
+} 
+
+</style>
+
+
+<body>
+    <header> SSonG II World </header> 
+    <div class="InteractiveMedia">
+        <h1>Interactive Media</h1>
+        <h2> 인터렉티브 미디어</h2>
+        <h3>インタラクティブ <br> メディア</h3>
+
+    </div>
+
+    <img src="./week01_img/01.jpg" class="img01">
+    <img src="./week01_img/02.jpg" class="img02">
+    <img src="./week01_img/03.jpg" class="img03">
+
+    
+
+   
+   
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week02</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            cursor: url('./img/black.png')2 2, auto;
+        }
+        @font-face {
+            font-family:"Walkway" ;
+            src: url(./img/Walkway.ttf);
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            font-size: 30px;
+            line-height: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header{
+            background-color: blue;
+            height: 10vh;
+        }
+
+        .Row{
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        #menu{
+            padding: 12px;
+            width: 30%;
+            background-color: darkgray;
+        }
+
+        #content{
+            width: 70%;
+            background-color: rgb(255, 0, 0);
+        }
+
+        h1, p{
+            margin-left: 20px;
+        }
+
+        a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            
+        }
+
+        button{
+            font-size: 20px;
+            font-family: inherit;
+            margin: 10px;
+            height: 40px;
+            border: 1.5px solid;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            
+        }
+        button:hover{
+            color: red;
+            border-color: blue;
+        }
+    
+    </style>
+</head>
+<body>
+    <header> <h1>SOnggi Playing With a Ball</h1></header>
+    <div class="Row">
+        <div id="menu">
+           <a href="./linkWeek01.html"><button>Week01</button></a> 
+           <a href="./linkWeek03.html"><button>Week03</button></a> 
+           <a href="./link/inspiration.html"><button>Inspiration</button></a> 
+        </div>
+        <div id="content">
+            <h1> Like a BOuncing Ball</h1>
+            <p>Let you and I becOme a ball, A ball that keep bOuncing.
+                Like a rOund ball that never knOws hOw tO pause, Like a dOg frOm the land of elasticity,
+                We keep bOuncing lightly, In the fOrm always ready tO mOve, Becoming a rOund ball.
+                Ah, the perfect fOrm, Just like yOu are nOw. A ball that keep bOuncing,Becoming a ball that never knOws hOw tO pause.
+            </p>
+
+            <img src="./week02_img/likeabouncingball.jpg" width="100%">
+        </div>
+    </div>
+
+</body>
+</html>
